@@ -51,9 +51,12 @@ window.clrtmr = 0;
 
     case ( window.location.hash.substring(0).toString().slice(0, 4) === '#02#' ):
          set_html_id('cta_message','SupportSaint the on demand I.T. service, book on-line, send us an email or call if you prefer ...');
+         set_html_id('cta_message_mob','SupportSaint I.T. services in your home ... call now');
+         set_html_id('cta_message_sml_mob','SupportSaint I.T. on demand ...');
+
          set_css_id('springpoll-msg','display','block');
          document.getElementById("springpoll-msg-color").style.backgroundColor = "#2d3e58";
-         document.getElementById("msg-btn").setAttribute("href", 'http://supportsaint.com?click_source=springroll');
+         document.getElementById("msg-right-btn").setAttribute("href", 'http://supportsaint.com?click_source=springroll');
          document.getElementById("springpoll-img").setAttribute("src", '/img/supportsaint_300x300.png');
          runurl();
     break;
@@ -108,22 +111,27 @@ window.document.addEventListener("DOMContentLoaded", function(event) {
   clrtmr = setTimeout(function(){
    
     // alert('doc loaded * size :' + document.getElementsByTagName('HTML')[0].outerHTML.length); 
-    /* alert(document.getElementsByTagName('HTML')[0].innerHTML.length); */
+    // alert(document.getElementsByTagName('HTML')[0].innerHTML.length);
 
-    switch (document.getElementsByTagName('HTML')[0].outerHTML.length) {
+    switch (true) {
 
-      case (4023):
-            console.log('default : url');
+      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3469):
+            // console.log('default : url');
             clearTimeout(clrtmr);
       break;
-      case (4088):
-            console.log('error : url');
+      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3604):
+            // console.log('error : url not exist');
+            clearTimeout(clrtmr);
+            window.location = window.location.href.replace(location.hash,"");
+      break;
+      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3609):
+            // console.log('error : url');
             clearTimeout(clrtmr);
             window.location = window.location.hash.substring(4);
       break;
 
     }
-    console.log("DOM fully loaded and parsed");
+    // console.log("DOM fully loaded and parsed");
 
   }, 3000);
 
