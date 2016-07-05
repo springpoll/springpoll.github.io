@@ -360,12 +360,9 @@ img {
     left: 97px
 }
 
-
 #msg-left {display:none;}
 
 #cta_message .content {margin-top: 12px;}
-
-/* #springpoll-msg-color .row .content {margin-top: 10px;} */
 
 .springpoll .row {
     height: 100%;
@@ -2207,77 +2204,6 @@ output {
 #cta_message_sml_mob { display:none;}
 
 
-/*
-@media (min-device-width: 300px) and (max-device-width: 800px) {
-
-    .container-fluid {
-        padding: 0 15px
-    }
-    .springpoll_wrap {
-        position: static
-    }
-    .springpoll {
-        display: block;
-        position: fixed;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.9);
-        z-index: 9999999;
-        padding: 10px 15px;
-        line-height: 40px
-    }
-    .springpollA {
-        height: 0px;
-        width: 0px;
-        display: none
-    }
-    #springpoll-msg-color {
-        min-height: 50px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        border-radius: 0px;
-        padding: 0 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-    }
-    #springpoll-msg-color.image {
-        left: 0
-    }
-
-    .springpoll .row {
-        height: 100%;
-        min-height: 30px;
-        padding: 12px
-    }
-    .springpoll .row .content {
-        height: 100%;
-        color: #fff
-    }
-    .springpoll .row .content.content-right {
-        padding-left: 0
-    }
-    .springpoll .table {
-        display: table;
-        margin: 0;
-        height: 100%
-    }
-    .springpoll .table .message {
-        display: table-cell;
-        vertical-align: middle;
-        line-height: 18px;
-        font-size: 17px;
-        font-weight: 500
-    }
-    .springpoll .row a {
-        float: right
-    }
-}
-*/
 
 @media screen and (max-width: 600px) {
 
@@ -2292,8 +2218,6 @@ output {
         left: 0;
         bottom: 0;
         min-height: 65px;
-        /* width: 100%; */
-        /* background: rgba(0, 0, 0, 0.9); */
         background: #262D34;
         border-radius: 0px;
         padding: 0 5px;
@@ -2306,8 +2230,6 @@ output {
 #springpoll-msg-color.image {
         left: 80px;
 }
-
-/* #springpoll-msg-color .row .content {margin-top: 6px;} */
 
 #cta_message .content {margin-top: 12px;}
 
@@ -2365,7 +2287,6 @@ output {
     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4)
 }
 
-
 #springpoll-msg-color.image {
     left: 57px;
 }
@@ -2391,10 +2312,7 @@ output {
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
-/* #springpoll-msg-color .row .content {margin-top: 6px;} */
-
 #cta_message .content {margin-top: 12px;}
-
 
 .springpoll .row .content {
         height: 100%;
@@ -2443,8 +2361,6 @@ output {
         position: absolute;
         left: 0;
         bottom: 0;
-        /* width: 100%; */
-        /* background: rgba(0, 0, 0, 0.9); */
         background: #262D34;
         border-radius: 3px;
         padding: 0 5px;
@@ -2458,10 +2374,7 @@ output {
         left: 0px;
 }
 
-/* #springpoll-msg-color .row .content {margin-top: 6px;} */
-
 #cta_message .content {margin-top: 12px;}
-
 
 .springpoll .row {
         height: 100%;
@@ -2512,18 +2425,11 @@ output {
         position: absolute;
         left: 0;
         bottom: 0;
-        /* width: 100%; */
-        /* background: rgba(0, 0, 0, 0.9); */
         background: #262D34;
         border-radius: 0px;
         padding: 0 5px;
-        /*
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-        */
+ 
 }
-
 
 #springpoll-msg-color.image {right: 0px;}
 
@@ -2545,7 +2451,6 @@ output {
     padding: 10px 15px;
     line-height: 40px
 }
-
 
 .springpoll .row {
         height: 100%;
