@@ -115,16 +115,16 @@ window.document.addEventListener("DOMContentLoaded", function(event) {
 
     switch (true) {
 
-      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3469):
+      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3779):
             // console.log('default : url');
             clearTimeout(clrtmr);
       break;
-      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3604):
+      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3914):
             // console.log('error : url not exist');
             clearTimeout(clrtmr);
             window.location = window.location.href.replace(location.hash,"");
       break;
-      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3609):
+      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3918):
             // console.log('error : url');
             clearTimeout(clrtmr);
             window.location = window.location.hash.substring(4);
