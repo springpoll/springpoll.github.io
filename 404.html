@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<!-- index.html v1.00.00 | (c) 2016 springpoll.com -->
+<!-- 404.html v1.00.00 | (c) 2016 springpoll.com -->
 
 <html lang="en-GB" itemtype="http://schema.org/WebPage" itemscope="" xmlns:website="http://ogp.me/ns/website" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" style="">
 
@@ -86,19 +86,34 @@
 
 </body>
 
-<script type="text/javascript" src="/js/rsa_x.js?v=1.00.00"></script>
 <script type="text/javascript" src="/js/squery.js?v=1.00.00"></script>
-<script type="text/javascript" src="/js/spring.js?v1.00.00"></script>
+<script type="text/javascript" src="/js/error.min.js?v=1.00.00"></script>
 
-<script>
-/*
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-58783721-1', 'auto');
-  ga('send', 'pageview');
- */ 
+<script type="text/javascript">
+
+window.onload = function(){
+      
+var uriarr = window.location.href.split('/');
+  
+/* console.log(uriarr[0] + '/'+ uriarr[1] +'/'+ uriarr[2] +'/'+ uriarr[3]); */
+
+var backlen = -1; 
+    history.go(-backlen);
+    window.history.replaceState( '', 'mrglynthomas', uriarr[0] + '/'+ uriarr[1] +'/'+ uriarr[2] );
+    uriarr = null; backlen = null;
+
+};
+
+function escapehtml(unsafe) {return unsafe
+    .replace(/&/g,'')
+    .replace(/%3C/g, '')
+    .replace(/.*=/g,'')
+    .replace(/\?/g,'')
+    .replace(/%3E/g, '')
+    .replace(/"/g, '')
+    .replace(/'/g, '');
+}
+
 </script>
 
 </html>
