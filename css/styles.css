@@ -1,9 +1,7 @@
 
-/*!
- * Bootstrap v3.2.0 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- *//*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/*! styles.css v1.00.00 | (c) 2016 springroll.com */
+
+@charset "UTF-8";
 
 html {
     font-family: sans-serif;
@@ -398,7 +396,8 @@ img {
     line-height: 18px;
     font-size: 17px;
     font-weight: 500;
-    color: #fff
+    color: #fff;
+    float: right;
 }
 
 .springpoll .row a {
@@ -777,7 +776,7 @@ p {
 }
 
 .col-xs-8 {
-    width: 66.66666667%
+    /* width: 66.66666667% */
 }
 
 .col-xs-7 {
@@ -793,7 +792,7 @@ p {
 }
 
 .col-xs-4 {
-    width: 33.33333333%
+ /*   width: 33.33333333% */
 }
 
 .col-xs-3 {
@@ -2592,4 +2591,53 @@ output {
 #cta_message_sml_mob { display:block; margin-top: 7px;}
  
 }
+
+@media screen and (max-width: 480px) {
+
+#cta_message { display:none;}
+#cta_message_mob { display:none; margin-top: 7px;}
+#cta_message_sml_mob { display:block; margin-top: 7px;}
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+#cta_message { display:none;}
+#cta_message_mob { display:none; margin-top: 7px;}
+#cta_message_sml_mob { display:block; margin-top: 7px;}
+
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+#cta_message { display:none;}
+#cta_message_mob { display:none; margin-top: 7px;}
+#cta_message_sml_mob { display:block; margin-top: 7px;}
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+#cta_message { display:none;}
+#cta_message_mob { display:none; margin-top: 7px;}
+#cta_message_sml_mob { display:block; margin-top: 7px;}
+
+}
+
+@media screen and (max-width: 320px) {
+    
+#cta_message { display:none;}
+#cta_message_mob { display:none; margin-top: 7px;}
+#cta_message_sml_mob { display:block; margin-top: 7px;}
+
+}
+
+
+
+
+
 
