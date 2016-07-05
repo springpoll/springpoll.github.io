@@ -9,11 +9,11 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: #000000 url("/img/springpolls.png") no-repeat fixed center center / cover ;
+    /* background: #000000 url("/img/springpolls.png") no-repeat fixed center center / cover ;*/
 }
 
 body {
-    margin: 0
+    /*background-image: -moz-linear-gradient(left top , rgb(48, 35, 174), rgb(200, 109, 215)); */
 }
 
 article,
@@ -309,58 +309,6 @@ img {
     line-height: 40px
 }
 
-/*
-.springpollA {
-        height: 0px;
-        width: 0px;
-        display: none
-}
-#springpoll-msg-color {
-        min-height: 50px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        border-radius: 0px;
-        padding: 0 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-}
-#springpoll-msg-color.image {
-        left: 0
-}
-
-.springpoll .row {
-        height: 100%;
-        min-height: 30px;
-        padding: 12px
-}
-.springpoll .row .content {
-        height: 100%;
-        color: #fff
-}
-.springpoll .row .content.content-right {
-        padding-left: 0
-}
-.springpoll .table {
-        display: table;
-        margin: 0;
-        height: 100%
-}
-.springpoll .table .message {
-        display: table-cell;
-        vertical-align: middle;
-        line-height: 18px;
-        font-size: 17px;
-        font-weight: 500
-}
-.springpoll .row a {
-        float: right
-}
-*/
-
 .springpoll {
     display: block;
     position: fixed;
@@ -386,7 +334,7 @@ img {
 
 .springpollA img {
     display: block;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4)
@@ -403,11 +351,11 @@ img {
     /*background: rgba(0, 0, 0, 0.9);*/
     background: #262D34;
 
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4)
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4)
 }
 
 #springpoll-msg-color.image {
@@ -419,12 +367,14 @@ img {
 
 #cta_message .content {margin-top: 12px;}
 
-#springpoll-msg-color .row .content {margin-top: 10px;}
+/* #springpoll-msg-color .row .content {margin-top: 10px;} */
 
 .springpoll .row {
     height: 100%;
     min-height: 72px;
-    padding: 8px
+    padding-top: 20px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 .springpoll .row .content {
@@ -499,7 +449,25 @@ img {
 .call_to_action:hover {background: #ffffff;opacity: 1;color: #2d3e58;}
 .call_to_action {color: #ffffff;}
 
-.springpoll-page { background: #000000 url("/img/springpolls.png") no-repeat fixed center center / cover ;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;}
+.springpoll-page { 
+
+background-position: 50% 50%;
+background-repeat: no-repeat no-repeat;
+background-size: cover;
+bottom: 0;
+left: 0;
+overflow: hidden;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -1;
+
+background: -moz-linear-gradient(left top , rgba(48, 35, 174, 0.8), rgba(200, 109, 215, 0.8) 100%), url("/img/springpolls.png") no-repeat fixed center center / cover ;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+background: -webkit-linear-gradient(left top , rgba(48, 35, 174, 0.8), rgba(200, 109, 215, 0.8) 100%), url("/img/springpolls.png") no-repeat fixed center center / cover ;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+background: -ms-linear-gradient(left top , rgba(48, 35, 174, 0.8), rgba(200, 109, 215, 0.8) 100%), url("/img/springpolls.png") no-repeat fixed center center / cover ;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;
+
+}
+
 
 html{
     min-height:100%;/* make sure it is at least as tall as the viewport */
@@ -508,16 +476,6 @@ html{
 body{
     height:100%; /* force the BODY element to match the height of the HTML element */
 }
-.springpoll-page{
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1; /* Remove this line if it's not going to be a background! */
-}
-
 
 .img-responsive,
 .thumbnail>img,
@@ -727,8 +685,8 @@ p {
 }
 
 .row {
-    margin-right: -15px;
-    margin-left: -15px
+    /* margin-right: -15px; */
+    /* margin-left: -15px */
 }
 
 .col-xs-1,
@@ -780,9 +738,11 @@ p {
 .col-md-12,
 .col-lg-12 {
     position: relative;
+    /*
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px
+    */
 }
 
 .col-xs-1,
@@ -797,7 +757,7 @@ p {
 .col-xs-10,
 .col-xs-11,
 .col-xs-12 {
-    float: left
+    float: left;
 }
 
 .col-xs-12 {
@@ -1862,7 +1822,7 @@ output {
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 4px
+    border-radius: 3px
 }
 
 .btn:focus,
@@ -2243,7 +2203,9 @@ output {
     }
 }
 
-
+#cta_message { display:block;}
+#cta_message_mob { display:none;}
+#cta_message_sml_mob { display:none;}
 
 
 /*
@@ -2346,15 +2308,18 @@ output {
         left: 80px;
 }
 
-#springpoll-msg-color .row .content {margin-top: 6px;}
+/* #springpoll-msg-color .row .content {margin-top: 6px;} */
 
 #cta_message .content {margin-top: 12px;}
 
 .springpoll .row {
         height: 100%;
         min-height: 30px;
-        padding: 8px
+        padding-top: 15px;
+        padding-right: 8px;
+        padding-left: 8px;
 }
+
 .springpoll .row .content {
         height: 100%;
         color: #fff
@@ -2377,27 +2342,112 @@ output {
 .springpoll .row a {
         float: right
 }
+
+#cta_message { display:block;}
+#cta_message_mob { display:none;}
+#cta_message_sml_mob { display:none;}
  
 }
 
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 590px) {
 
 .springpollA {
-        height: 65px;
-        width: 65px;
+        height: 50px;
+        width: 50px;
    
 }
+
+#springpoll-msg-color {
+
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4)
+}
+
+
+#springpoll-msg-color.image {
+    left: 57px;
+}
+
+.springpoll .row {
+    min-height: 20px;
+    padding-top: 7px;
+    padding-bottom: 1px;
+}
+
 #springpoll-msg-color {
         min-height: 50px;
         position: absolute;
         left: 0;
         bottom: 0;
-        min-height: 65px;
         /* width: 100%; */
         /* background: rgba(0, 0, 0, 0.9); */
         background: #262D34;
-        border-radius: 0px;
+        border-radius: 3px;
+        padding: 0 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+/* #springpoll-msg-color .row .content {margin-top: 6px;} */
+
+#cta_message .content {margin-top: 12px;}
+
+
+.springpoll .row .content {
+        height: 100%;
+        color: #fff;
+}
+.springpoll .row .content.content-right {
+        padding-left: 0
+}
+.springpoll .table {
+        display: table;
+        margin: 0;
+        height: 100%
+}
+.springpoll .table .message {
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 17px;
+        font-size: 17px;
+        font-weight: 500
+}
+.springpoll .row a {
+        float: right
+}
+
+#cta_message { display:block;}
+#cta_message_mob { display:none;}
+#cta_message_sml_mob { display:none;}
+ 
+}
+
+
+@media screen and (max-width: 565px) {
+
+.springpollA {
+        height: 50px;
+        width: 50px;
+   
+}
+
+#springpoll-msg-color.image {
+    left: 57px;
+}
+
+#springpoll-msg-color {
+        min-height: 50px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        /* width: 100%; */
+        /* background: rgba(0, 0, 0, 0.9); */
+        background: #262D34;
+        border-radius: 3px;
         padding: 0 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -2406,20 +2456,13 @@ output {
 
 
 #springpoll-msg-color.image {
-        left: 80px;
+        left: 0px;
 }
 
-#springpoll-msg-color .row .content {margin-top: 6px;}
+/* #springpoll-msg-color .row .content {margin-top: 6px;} */
 
 #cta_message .content {margin-top: 12px;}
 
-#msg-right {display:none;}
-
-#msg-left {
-    display:block;
-    margin-bottom: -50px;
-    margin-left: 0;
-}
 
 .springpoll .row {
         height: 100%;
@@ -2429,7 +2472,7 @@ output {
 .springpoll .row .content {
         height: 100%;
         color: #fff;
-        margin-left: 60px;
+
 }
 .springpoll .row .content.content-right {
         padding-left: 0
@@ -2450,14 +2493,19 @@ output {
         float: right
 }
  
+#cta_message { display:block;}
+#cta_message_mob { display:none;}
+#cta_message_sml_mob { display:none;}
+
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 564px) {
 
 .springpollA {
-        height: 65px;
-        width: 65px;
+        height: 0px;
+        width: 0px;
+        display: none;
    
 }
 #springpoll-msg-color {
@@ -2465,105 +2513,38 @@ output {
         position: absolute;
         left: 0;
         bottom: 0;
-        min-height: 65px;
         /* width: 100%; */
         /* background: rgba(0, 0, 0, 0.9); */
         background: #262D34;
         border-radius: 0px;
         padding: 0 5px;
+        /*
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        */
 }
 
 
-#springpoll-msg-color.image {
-        left: 0px;
-}
-
-#springpoll-msg-color .row .content {margin-top: 6px;}
+#springpoll-msg-color.image {right: 0px;}
 
 #cta_message .content {margin-top: 12px;}
 
-#msg-right {display:none;}
-
-#msg-left {
-    display:block;
-    margin-bottom: -50px;
-    margin-left: 0;
+.springpoll_wrap {
+    position: static;
+    z-index: 2147483647;
 }
 
-.springpoll .row {
-        height: 100%;
-        min-height: 30px;
-        padding: 8px
-}
-.springpoll .row .content {
-        height: 100%;
-        color: #fff;
-        margin-left: 60px;
-}
-.springpoll .row .content.content-right {
-        padding-left: 0
-}
-.springpoll .table {
-        display: table;
-        margin: 0;
-        height: 100%
-}
-.springpoll .table .message {
-        display: table-cell;
-        vertical-align: middle;
-        line-height: 18px;
-        font-size: 17px;
-        font-weight: 500
-}
-.springpoll .row a {
-        float: right
-}
- 
-}
-
-
-@media screen and (max-width: 540px) {
-
-.springpollA {
-        height: 65px;
-        width: 65px;
-   
-}
-#springpoll-msg-color {
-        min-height: 50px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        min-height: 65px;
-        /* width: 100%; */
-        /* background: rgba(0, 0, 0, 0.9); */
-        background: #262D34;
-        border-radius: 0px;
-        padding: 0 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-}
-
-
-#springpoll-msg-color.image {
-        left: 0px;
-}
-
-#springpoll-msg-color .row .content {margin-top: 6px;}
-
-#cta_message .content {margin-top: 12px;}
-
-#msg-right {display:none;}
-
-#msg-left {
-    display:block;
-    margin-bottom: -50px;
-    margin-left: 0;
-    margin-top: 9px;
+.springpoll {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0px;
+    z-index: 9999999;
+    padding: 10px 15px;
+    line-height: 40px
 }
 
 
@@ -2575,10 +2556,9 @@ output {
 .springpoll .row .content {
         height: 100%;
         color: #fff;
-        margin-left: 60px;
 }
 .springpoll .row .content.content-right {
-        padding-left: 0
+        float: right;
 }
 .springpoll .table {
         display: table;
@@ -2596,89 +2576,20 @@ output {
         float: right;
       
 }
+
+#msg-right-btn { float: right;}
+
+#cta_message { display:none;}
+#cta_message_mob { display:block; margin-top: 7px;}
+#cta_message_sml_mob { display:none; margin-top: 7px;}
  
 }
 
-@media screen and (max-width: 442px) {
+@media screen and (max-width: 500px) {
 
-.springpollA {
-        height: 65px;
-        width: 65px;
-   
-}
-#springpoll-msg-color {
-        min-height: 50px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        min-height: 65px;
-        /* width: 100%; */
-        /* background: rgba(0, 0, 0, 0.9); */
-        background: #262D34;
-        border-radius: 0px;
-        padding: 0 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-}
-
-
-#springpoll-msg-color.image {
-        left: 0px;
-}
-
-#springpoll-msg-color .row .content {margin-top: 6px;}
-
-#cta_message .content {margin-top: 12px;}
-
-#msg-right {display:none;}
-
-#msg-left {
-    display:block;
-    margin-bottom: -60px;
-    margin-left: 0;
-    margin-top: 9px;
-}
-
-
-.springpoll .row {
-        height: 100%;
-        min-height: 30px;
-        /* padding: 8px; */
-        padding-left: 3px;
-        padding-top: 4px;
-
-}
-.springpoll .row .content {
-        height: 100%;
-        color: #fff;
-        margin-left: 60px;
-}
-.springpoll .row .content.content-right {
-        padding-left: 0
-}
-.springpoll .table {
-        display: table;
-        margin: 0;
-        height: 100%
-}
-.springpoll .table .message {
-        display: table-cell;
-        vertical-align: middle;
-        line-height: 18px;
-        font-size: 17px;
-        font-weight: 500
-}
-.springpoll .row a {
-        float: right;
-      
-}
+#cta_message { display:none;}
+#cta_message_mob { display:none; margin-top: 7px;}
+#cta_message_sml_mob { display:block; margin-top: 7px;}
  
-.btn {
-
-padding: 15px 14px;
-
-}
-
 }
 
