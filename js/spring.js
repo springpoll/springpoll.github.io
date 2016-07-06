@@ -100,7 +100,11 @@ console.log( window.location.hash.substring(4) );
 
 window.onload = function() {
 
+  try {
+
    checkurlvalue();
+
+  } catch(er) {}
 
    // document.getElementById("springpoll-iframe").setAttribute("src", window.location.hash.substring(4));
   
@@ -108,32 +112,39 @@ window.onload = function() {
 
 window.document.addEventListener("DOMContentLoaded", function(event) {
   
+try {
+
   clrtmr = setTimeout(function(){
    
     // alert('doc loaded * size :' + document.getElementsByTagName('HTML')[0].outerHTML.length); 
     // alert(document.getElementsByTagName('HTML')[0].innerHTML.length);
 
-    switch (true) {
+      switch (true) {
 
-      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3779):
-            // console.log('default : url');
-            clearTimeout(clrtmr);
-      break;
-      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3914):
-            // console.log('error : url not exist');
-            clearTimeout(clrtmr);
-            window.location = window.location.href.replace(location.hash,"");
-      break;
-      case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3918):
-            // console.log('error : url');
-            clearTimeout(clrtmr);
-            window.location = window.location.hash.substring(4);
-      break;
+        case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 2850):
+        case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3833):
+              // console.log('default : url');
+              clearTimeout(clrtmr);
+        break;
+        case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3968):
+              // console.log('error : url not exist');
+              clearTimeout(clrtmr);
+              window.location = window.location.href.replace(location.hash,"");
+        break;
+        case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3918):
+        case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 4039):
+              // console.log('error : url * iframe not allowed * iframe content blocked ');
+              clearTimeout(clrtmr);
+              window.location = window.location.hash.substring(4);
+        break;
 
-    }
-    // console.log("DOM fully loaded and parsed");
+      }
+      
+      // console.log("DOM fully loaded and parsed");
 
-  }, 3000);
+      }, 3000);
+
+    } catch(er) {}
 
   });
 
