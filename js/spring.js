@@ -39,15 +39,27 @@ window.clrtmr = 0;
  // window.location.hash='http://www.saastr.com/the-official-saastr-podcast-029-andy-wilson-founder-ceo-logickull-discusses-what-its-like-to-have-jason-lemkin-as-your-investor/';
  // http://springpoll.apc/#01#http://www.saastr.com/the-official-saastr-podcast-029-andy-wilson-founder-ceo-logickull-discusses-what-its-like-to-have-jason-lemkin-as-your-investor/
 
-  console.log( window.location.hash.substring(0) );
+ // console.log( window.location.hash.substring(0) );
+ // console.log( window.location.hash.substring(0).toString().slice(0, 4) );
 
-  console.log( window.location.hash.substring(0).toString().slice(0, 4) );
-
-  // if (  window.location.hash.substring(0).toString().slice(0, 4) === '#01#' ) { alert('wank');}
+ // if (  window.location.hash.substring(0).toString().slice(0, 4) === '#01#' ) { alert('wank');}
 
  function checkurlvalue() {
 
   switch (true) {
+
+    case ( window.location.hash.substring(0).toString().slice(0, 4) === '#03#' ):
+         set_html_id('cta_message','Organic Growth + User Acquisitions &nbsp; <br> Lets Connect ... ');
+         set_html_id('cta_message_mob','Organic Growth + User Acquisitions ... simple');
+         set_html_id('cta_message_sml_mob','Growth + User Acquisitions ...');
+
+         set_css_id('springpoll-msg','display','block');
+         document.getElementById("springpoll-msg-color").style.backgroundColor = "#1A1A1A";
+         document.getElementById("msg-right-btn").setAttribute("href", 'https://uk.linkedin.com/in/mrglynthomas?click_source=springpoll');
+         document.getElementById("springpoll-A").setAttribute("href", 'https://twitter.com/intent/follow?screen_name=mrglynthomas');
+         document.getElementById("springpoll-img").setAttribute("src", '/img/glynavatar_300x300.png');
+         runurl();
+    break;
 
     case ( window.location.hash.substring(0).toString().slice(0, 4) === '#02#' ):
          set_html_id('cta_message','SupportSaint the on demand I.T. service, book on-line, send us an email or call if you prefer ...');
@@ -56,7 +68,8 @@ window.clrtmr = 0;
 
          set_css_id('springpoll-msg','display','block');
          document.getElementById("springpoll-msg-color").style.backgroundColor = "#2d3e58";
-         document.getElementById("msg-right-btn").setAttribute("href", 'http://supportsaint.com?click_source=springroll');
+         document.getElementById("msg-right-btn").setAttribute("href", 'http://supportsaint.com?click_source=springpoll');
+         document.getElementById("springpoll-A").setAttribute("href", 'https://twitter.com/intent/follow?screen_name=supportsaint');
          document.getElementById("springpoll-img").setAttribute("src", '/img/supportsaint_300x300.png');
          runurl();
     break;
@@ -67,7 +80,7 @@ window.clrtmr = 0;
     break;
 
     default: // load default page and default message
-           console.log('default web page!');
+             // console.log('default web page!');
            runurl();
     break;
 
@@ -88,7 +101,7 @@ function runurl() {
 
   } else {
       // load default page and default message 
-      console.log('default web page!');
+      // console.log('default web page!');
       set_css_id('springpoll-iframe','display','none');
       set_css_id('springpoll-page','display','block');
       set_css_id('springpoll-msg','display','block');
@@ -96,7 +109,7 @@ function runurl() {
 }
 
 
-console.log( window.location.hash.substring(4) );
+// console.log( window.location.hash.substring(4) );
 
 window.onload = function() {
 
