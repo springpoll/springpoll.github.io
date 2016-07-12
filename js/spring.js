@@ -38,10 +38,8 @@ window.clrtmr = 0;
 
  // window.location.hash='http://www.saastr.com/the-official-saastr-podcast-029-andy-wilson-founder-ceo-logickull-discusses-what-its-like-to-have-jason-lemkin-as-your-investor/';
  // http://springpoll.apc/#01#http://www.saastr.com/the-official-saastr-podcast-029-andy-wilson-founder-ceo-logickull-discusses-what-its-like-to-have-jason-lemkin-as-your-investor/
-
  // console.log( window.location.hash.substring(0) );
  // console.log( window.location.hash.substring(0).toString().slice(0, 4) );
-
  // if (  window.location.hash.substring(0).toString().slice(0, 4) === '#01#' ) { alert('wank');}
 
  function checkurlvalue() {
