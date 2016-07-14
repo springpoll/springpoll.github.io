@@ -144,9 +144,14 @@ try {
         break;
         case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 3918):
         case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 4039):
+        case ( (document.getElementsByTagName('HTML')[0].innerHTML.length) === 4168):
               // console.log('error : url * iframe not allowed * iframe content blocked ');
               clearTimeout(clrtmr);
               window.location = window.location.hash.substring(4);
+        break;
+
+        default:
+              document.body.style.backgroundImage='none';
         break;
 
       }
