@@ -65,7 +65,7 @@ window.clrtmr = 0;
          set_html_id('cta_message_sml_mob','SupportSaint I.T. on demand ...');
 
          set_css_id('springpoll-msg','display','block');
-         document.getElementById("springpoll-msg-color").style.backgroundColor = "#2d3e58";
+         document.getElementById("springpoll-msg-color").style.backgroundColor = "#1A1A1A";
          document.getElementById("msg-right-btn").setAttribute("href", 'http://supportsaint.com?click_source=springpoll');
          document.getElementById("springpoll-A").setAttribute("href", 'https://twitter.com/intent/follow?screen_name=supportsaint');
          document.getElementById("springpoll-img").setAttribute("src", '/img/supportsaint_300x300.png');
