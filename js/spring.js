@@ -47,15 +47,16 @@ window.clrtmr = 0;
   switch (true) {
 
     case ( window.location.hash.substring(0).toString().slice(0, 4) === '#03#' ):
-         set_html_id('cta_message','Organic Growth + User Acquisitions &nbsp; <br> Lets Connect ... ');
-         set_html_id('cta_message_mob','Organic Growth + User Acquisitions ... simple');
-         set_html_id('cta_message_sml_mob','Growth + User Acquisitions ...');
+
+         set_html_id('cta_message','We target social media, driving customers to your website, find out more ...');
+         set_html_id('cta_message_mob','More traffic to your website ... simple');
+         set_html_id('cta_message_sml_mob','More traffic to your website ...');
 
          set_css_id('springpoll-msg','display','block');
          document.getElementById("springpoll-msg-color").style.backgroundColor = "#1A1A1A";
-         document.getElementById("msg-right-btn").setAttribute("href", 'https://uk.linkedin.com/in/mrglynthomas?click_source=springpoll');
-         document.getElementById("springpoll-A").setAttribute("href", 'https://twitter.com/intent/follow?screen_name=mrglynthomas');
-         document.getElementById("springpoll-img").setAttribute("src", '/img/glynavatar_300x300.png');
+         document.getElementById("msg-right-btn").setAttribute("href", 'http://goo.gl/MHA3hI');
+         document.getElementById("springpoll-A").setAttribute("href", 'https://goo.gl/lRJmMa');
+         document.getElementById("springpoll-img").setAttribute("src", '/img/busyrocket_300x300.png');         
          runurl();
     break;
 
@@ -66,8 +67,8 @@ window.clrtmr = 0;
 
          set_css_id('springpoll-msg','display','block');
          document.getElementById("springpoll-msg-color").style.backgroundColor = "#1A1A1A";
-         document.getElementById("msg-right-btn").setAttribute("href", 'http://supportsaint.com?click_source=springpoll');
-         document.getElementById("springpoll-A").setAttribute("href", 'https://twitter.com/intent/follow?screen_name=supportsaint');
+         document.getElementById("msg-right-btn").setAttribute("href", 'http://goo.gl/m6o2fd');
+         document.getElementById("springpoll-A").setAttribute("href", 'https://goo.gl/x1vSDN');
          document.getElementById("springpoll-img").setAttribute("src", '/img/supportsaint_300x300.png');
          runurl();
     break;
